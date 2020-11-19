@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>I-rate Restaurants</title>
+</head> 
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="header__title">Welcome to I-rate Restaurants</h1>
+            <p class="header__desc">Please rate the restaurants in the form below</p>
+        </div>
+        <div class="main">
+            <div class="form-body">
+                <form action="/index.html" name="myForm" onsubmit="app.showdata()">
+                    <!-- Name of Restaurant -->
+                    <div class="form-group">
+                        <label for="">Name of Restaurant</label>
+                        <input type="text" id="name" name="Name" required="required">
+                    </div>
+
+                    <!-- Type of Restaurant -->
+                    <div class="form-group">
+                        <label for="">Type of Restaurant</label>
+                        <select name="types" id="types" required>
+                            <option value="">[choose yours]</option>
+                            <option value="grill">Grill</option>
+                            <option value="fastfood">Fast food</option>
+                            <option value="seefood">See food</option>
+                            <option value="hotpot">Hot pot</option>
+                        </select>
+                    </div>
+
+                    <!-- Time & Date of the visit -->
+                    <div class="form-group">
+                        <label for="">Time & Date of the visit</label>
+                        <input type="time" id="time" name="time" required="required">
+                        <input type="date" id="date" name="date" required="required">
+                    </div>
+
+                    <!-- Average meal price per person -->
+                    <div class="form-group">
+                        <label for="">Average meal price per person ($)</label>
+                        <input type="number" id="price" name="price" required="required">
+                    </div>
+
+                    <!-- Service rating -->
+                    <div class="form-group">
+                        <label for="">Service rating</label>
+                        <div>
+                            <select name="rateservice" id="rateservice" required>
+                                <option value="">[Rate Service]</option>
+                                <option value="1">Bad</option>
+                                <option value="2">Need to improve</option>
+                                <option value="3">OKAY</option>
+                                <option value="4">Good</option>
+                                <option value="5">Excellent</option>
+                            </select>
+                            <span>Equivalent to 1-5 star</span>
+                        </div>
+                    </div>
+
+                    <!-- Cleanliness rating  -->
+                    <div class="form-group">
+                        <label for="">Cleanliness rating</label>
+                        <select name="ratecleanliness" id="ratecleanliness" required>
+                            <option value="">[Rate Cleanliness]</option>
+                            <option value="1">Bad</option>
+                            <option value="2">Need to improve</option>
+                            <option value="3">OKAY</option>
+                            <option value="4">Good</option>
+                            <option value="5">Excellent</option>
+                        </select> <span>Equivalent to 1-5 star</span>
+                    </div>
+
+                    <!-- Food quality  rating -->
+                    <div class="form-group">
+                        <label for="">Food quality  rating</label>
+                        <div>
+                            <select name="ratefood" id="ratefood" required>
+                                <option value="">[Rate Food quality]</option>
+                                <option value="1">Bad</option>
+                                <option value="2">Need to improve</option>
+                                <option value="3">OKAY</option>
+                                <option value="4">Good</option>
+                                <option value="5">Excellent</option>
+                            </select>
+                            <span>Equivalent to 1-5 star</span>
+                        </div>
+                    </div>
+
+                    <!-- Notes -->
+                    <div class="form-group">
+                        <label for="">Notes</label>
+                        <textarea name="" id="note" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <!-- Name of reporter -->
+                    <div class="form-group">
+                        <label for="">Name of reporter</label>
+                        <input type="text" id="namereporter" required="required" name="NameReporter">
+                    </div>
+                    <input type="submit" value="submit" class="submitt">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/index.js">
+    </script>
+</body>
+</html>
